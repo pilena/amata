@@ -1,0 +1,110 @@
+.footer {
+    background: $color-footer;
+    &__widgets {
+        @include flex(flex, row, wrap, space-between, flex-start);
+        @include breakpoint (xs) {
+            justify-content: flex-start;
+        }
+        color: $color-background;
+        padding: 112px 0 64px 0;
+        p {
+            padding-top: 24px;
+            color: $color-background;
+            font-weight: 400;
+        }
+        &-wrap {
+            @include flex(flex, row, wrap, space-between, center);
+            padding: 0;
+            h5 {
+             color: $color-brand-two;
+            }
+            a {
+                color: $color-background!important;
+            }
+            &--left {
+                padding-right: 72px;
+                @include breakpoint (md) {
+                    padding-right: 24px;
+                }
+            }
+            &--right {
+
+            }
+        }
+        &--second,&--third,&--fourth,&--fifth {
+            display: flex;
+            justify-content: flex-start;
+            
+            ul {
+                padding: 0!important;
+                li {
+                    list-style: none;
+                    padding: $space-xxsm/2 0;
+                    width: fit-content;
+                    &:hover {
+                        a {
+                            color: $color-brand-two!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__drawer {
+        background: $color-footer-drawer;
+        &-wraper {
+            @include flex(flex, row, wrap, space-between, center);
+            @include breakpoint (xs) {
+                justify-content: flex-start;
+            }
+        }
+        &--copyright {
+            color: $color-background;
+            font-family: $font-family-bold;
+            font-weight: $font-weight-normal;
+        }
+        &--links {
+            display: flex;
+            justify-content: flex-end;
+            @include breakpoint (xs) {
+                justify-content: flex-start;
+            }
+            a {
+                color: $color-background;
+                font-family: $font-family-bold;
+                font-weight: $font-weight-normal;
+                &:hover {
+                    color: $color-brand-two;
+                }
+            }
+        }
+    }
+    i {
+        font-size: 24px;
+    }
+    .follow {
+        a {
+            padding:0 12px;
+            &:first-of-type {
+                padding-left: 0;
+            }
+            &:hover {
+               color: $color-brand-two!important;
+           }
+        }
+    }
+    .ri-phone-line,.ri-mail-line {
+        color: $color-brand-two;
+        padding-right: 24px;
+        @include flex-nowrap(inline-flex, row, center, center);
+        @include breakpoint (lg) {
+        padding-right: 16px;
+        }
+        a {
+            margin-left: 10px;
+            font-family: $font-family!important;
+            font-size: 16px!important;
+        }
+    }
+}
+

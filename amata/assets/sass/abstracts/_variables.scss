@@ -1,0 +1,152 @@
+// Font & Text
+$font-family: 'Open Sans', sans-serif;
+$font-family-thin: 'Open Sans', sans-serif;
+$font-family-medium: 'Open Sans', sans-serif;
+$font-family-bold: 'Open Sans', sans-serif;
+$font-family-icon: 'remixicon' !important;
+$font-size: 16px;
+$font-size-small: 12px;
+$font-style-normal: normal;
+$font-style-italic: italic;
+$font-style-oblique: oblique;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+$line-height: 40px;
+
+$text-upper: uppercase;
+$text-lower: lowercase;
+
+// Colors
+$color-background: #FFFF;
+$color-background-alt: #FAFAFA;
+
+$color-brand-one: #A347FF;
+$color-brand-one-first: #6600CC;
+$color-brand-one-second: #32C3B7;
+$color-brand-one-third:#21827A;
+$color-brand-two: #B1C0E7;
+$color-brand-two-first: #738ED4;
+$color-brand-two-second: #3A5EBB;
+$color-brand-two-third:#253D7A;
+$color-brand-three: #AE9DBE;
+$color-brand-three-first: #866D9E;
+$color-brand-three-second: #5C496E;
+$color-brand-three-third:#33293D;
+
+$color-accent: #FFC546;
+$color-neutral:#253D7A;
+$color-neutral-first:#5F6B7A;
+$color-neutral-second:#8895A7;
+$color-neutral-third:#B8C4CE;
+$color-neutral-fourth:#CFD6DE;
+$color-neutral-fifth:#E1E7EC;
+$color-neutral-sixth:#F8F9FA;
+
+$color-transparent: transparent;
+$color-hr: #CCC;
+$color-line: #CCC;
+
+// Color Text & Inputs
+$color-text: #9A9A9C;
+$color-heading: #A347FF;
+$color-heading-alt: #FFFF;
+
+$color-status-error:#FF1F22;
+$color-status-error-first:#FF4D4F;
+$color-status-error-second:#FF999B;
+$color-status-error-third:#FFD6D7;
+$color-status-warning:#FBB323;
+$color-status-warning-first:#FCC85F;
+$color-status-warning-second:#FDDC9B;
+$color-status-warning-third:#FEF1D7;
+$color-status-success:#52C41A;
+$color-status-success-first:#72E538;
+$color-status-success-second:#98EC6F;
+$color-status-success-third:#BFF3A5;
+
+// Color Header & Footer
+$color-footer:#202332;
+$color-footer-drawer:#6600CC;
+$color-footer-text: #848A9C;
+
+// Color Links & Buttons
+$color-link-default: #FFF;
+$color-link-alt: #202332;
+$color-link-hover: #5F6B7A;
+$color-button: #FFC546;
+$color-button-hover:  #262626;
+$color-button-alt: #fff;
+$color-button-alt-hover:#FAFAFA;
+
+// Color Gradients
+$color-gradient: linear-gradient(180deg, #A347FF 0%, #6600CC 100%);
+$color-gradient-right: linear-gradient(to right, #253D7A ,#5F6B7A);
+$color-gradient-bottom-right: linear-gradient(to bottom right, #253D7A ,#5F6B7A);
+$color-gradient-bottom-right: linear-gradient(to bottom right, #253D7A ,#5F6B7A);
+$color-gradient-deg:  linear-gradient(180deg, rgba(185, 203, 202, 0) 52.18%, rgba(0, 37, 46, 0.5) 77.21%, #00252E 100%);
+
+// Color Overlay
+$color-overlay: rgba(6, 73, 87, 0.7);
+
+// Color Form
+$color-form-placeholder:#B0B8CA;
+$color-form-border:#A8AAAD;
+
+// Border
+$border-primary: 1px solid $color-neutral;
+$border-button: 1.5px solid $color-neutral;
+
+// Drop shadow 
+$box-shadow: 0px 7.04161px 15.3294px rgba(67, 67, 67, 0.0752215), 0px 4.92415px 6.3357px rgba(67, 67, 67, 0.0444555), 0px 2.89319px 3.08708px rgba(67, 67, 67, 0.0185339), 0px 1.21701px 1.54994px rgba(67, 67, 67, 0.00421641);
+
+// Spacing Units - Margins & Paddings
+$margin: 16px;
+$padding: 16px;
+
+$space-xxsm: 16px;
+$space-xsm: 32px;
+$space-sm: 64px;
+$space-md: 96px;
+$space-lg: 160px;
+$space-xlg: 288px;
+$space-xxlg: 320px;
+
+// Image path
+$image-path: '../images/';
+
+// Retina image suffix
+$image-suffix: '-2x';
+
+// Font path
+$font-path: '../fonts/';
+
+// Grid
+$grid-columns: 12;
+$grid-column-gutter: 40px;
+$grid-column-gutter-md: 32px;
+$grid-column-gutter-sm: 26px;
+$grid-column-gutter-xs: 20px;
+
+//Icons
+$icon-primary: "\f2de";
+$icon-primary-alt: "\f2de";
+$icon-secondary: "\ee0f";
+$icon-secondary-alt: "\ee0f";
+$icon-nav: "\ee0f";
+$icon-nav-alt: "\ee0f";
+
+$header-icon: "\ef78";
+$header-icon-alt: "\f274";
+$header-icon-nav: "\ef3e";
+$header-icon-nav-alt: "\ee2f";
+
+
+// Break points
+$xxs: 360px;
+$xs: 768px;
+$sm: 1024px;
+$md: 1280px;
+$lg: 1440px;
