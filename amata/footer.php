@@ -6,10 +6,8 @@
 							<div class="footer__widgets--first"><?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?></div>
 						</div>
 						<div class="col-lg-8 col-sm-6 col-xxs-12 footer__widgets-wrap footer__widgets-wrap--right">
-							<div class="col-lg-3 col-sm-6 footer__widgets--second"><?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?></div>
-							<div class="col-lg-3 col-sm-6 footer__widgets--third"><?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?></div>
-							<div class="col-lg-3 col-sm-6 footer__widgets--fourth"><?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-4')) ?></div>
-							<div class="col-lg-3 col-sm-6 footer__widgets--fifth"><?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-5')) ?></div>
+							<div class="col-lg-6 col-sm-6 footer__widgets--second"><?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?></div>
+							<div class="col-lg-6 col-sm-6 footer__widgets--third"><?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?></div>
 						</div>
 					</div>
 				</div>

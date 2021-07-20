@@ -1,1 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,900);
+
+@font-face {
+    font-family: 'Neometric Medium';
+    src: url('/wp-content/themes/amata/fonts/Neometric-Medium.woff') format('woff'), url('/wp-content/themes/amata/fonts/Neometric-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neometric';
+    src: url('/wp-content/themes/amata/fonts/Neometric-Regular.woff') format('woff'), url('/wp-content/themes/amata/fonts/Neometric-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

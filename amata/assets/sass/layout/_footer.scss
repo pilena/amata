@@ -13,7 +13,7 @@
             font-weight: 400;
         }
         &-wrap {
-            @include flex(flex, row, wrap, space-between, center);
+            @include flex(flex, row, wrap, space-between, flex-start);
             padding: 0;
             h5 {
              color: $color-brand-two;
@@ -31,16 +31,36 @@
 
             }
         }
+        &--first {
+            ul {
+               @include list-reset;
+
+               li {
+                   @include flex(flex, row, wrap, flex-start, center);
+
+                   i {
+                       color: $color-icon;
+                   }
+               }
+            }
+        }
         &--second,&--third,&--fourth,&--fifth {
             display: flex;
             justify-content: flex-start;
+
+            h6 {
+                margin: 0;
+                color: $color-heading-alt;
+            }
             
             ul {
                 padding: 0!important;
                 li {
                     list-style: none;
-                    padding: $space-xxsm/2 0;
+                    padding: 4px 0;
                     width: fit-content;
+                    line-height: 22px;
+                    color: $color-text;
                     &:hover {
                         a {
                             color: $color-brand-two!important;
