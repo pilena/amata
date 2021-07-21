@@ -1,0 +1,17 @@
+.pricing {
+    &_table {
+        
+        &-row {
+            border-bottom: 1px solid $color-text;
+
+        }
+        &-link {
+            color: $color-brand-one;
+
+            p{
+                text-decoration: underline;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+}
