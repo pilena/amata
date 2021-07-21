@@ -154,6 +154,20 @@
 	}
 }
 
+.wave {
+	position: relative;
+
+	&-offset {
+		svg {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			bottom: 94px;
+		}
+	}
+	
+}
+
 //Position
 .relative {
 	position: relative;
