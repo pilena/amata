@@ -113,8 +113,8 @@
            }
         }
     }
-    .ri-phone-line,.ri-mail-line {
-        color: $color-brand-two;
+    .ri-phone-line,.ri-mail-fill,.ri-map-pin-2-fill {
+        color: $color-icon;
         padding-right: 24px;
         @include flex-nowrap(inline-flex, row, center, center);
         @include breakpoint (lg) {

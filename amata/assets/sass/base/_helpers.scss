@@ -144,6 +144,16 @@
 	justify-content: space-between;
 }
 
+.after {
+	&-center {
+		width: 40px;
+		height: 8px; 
+		background-color: $color-accent;
+		margin: 0px auto;
+		border-radius: 80px;
+	}
+}
+
 //Position
 .relative {
 	position: relative;

@@ -17,6 +17,8 @@
   }
   
   .acc-kontainer label {
+    font-size: 20px;
+    font-weight: $font-weight-semibold;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -25,7 +27,6 @@
     padding: 16px;
     width: 100%;
     color: #fff;
-    font-weight: 400;
     box-sizing: border-box;
     z-index: 100;
     border-radius: 8px;
