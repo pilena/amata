@@ -86,7 +86,7 @@ $color-icon: #848A9C;
 
 // Color Gradients
 $color-gradient: linear-gradient(180deg, #A347FF 0%, #6600CC 100%);
-$color-gradient-right: linear-gradient(to right, #253D7A ,#5F6B7A);
+$color-gradient-background: linear-gradient(180deg, #6600CC 0%, #202332 100%);
 $color-gradient-bottom-right: linear-gradient(to bottom right, #253D7A ,#5F6B7A);
 $color-gradient-bottom-right: linear-gradient(to bottom right, #253D7A ,#5F6B7A);
 $color-gradient-deg:  linear-gradient(180deg, rgba(185, 203, 202, 0) 52.18%, rgba(0, 37, 46, 0.5) 77.21%, #00252E 100%);
@@ -149,6 +149,7 @@ $header-icon-nav-alt: "\ee2f";
 
 // Break points
 $xxs: 360px;
+$xss: 425px;
 $xs: 768px;
 $sm: 1024px;
 $md: 1280px;

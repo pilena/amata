@@ -222,10 +222,12 @@
   #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
+	background-color: $color-brand-one;
   }
   #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
+	background-color: $color-brand-one;
   }
   #menu__toggle:checked ~ .menu__box {
     visibility: visible;
@@ -249,8 +251,9 @@
     width: 18px;
     cursor: pointer;
     z-index: 1;
+	margin: 0!important;
     > span {
-        background-color: $color-brand-two;
+        background-color: $color-background;
         display: block;
         position: absolute;
         transition-duration: .3s;
@@ -263,7 +266,7 @@
         position: absolute;
         width: 18px;
         height: 2px;
-        background-color: $color-brand-two;
+        background-color: $color-background;
         transition-duration: .3s;
     }
     > span::before {
@@ -298,6 +301,7 @@
     background-color: $color-background-alt;
     text-decoration: none;
     transition-duration: .3s;
+	text-align: center;
   }
   .menu__box li a:hover {
     background-color: $color-brand-one;
@@ -306,7 +310,7 @@
 
   //STARI
   .hamburgermenu {
-    background: $color-brand-one;
+    background: transparent;
     right: 0;
     position: absolute;
     height: 80px;
@@ -316,7 +320,7 @@
     background-color: $color-background;
     text-decoration: none;
     a {
-        color: $color-text;
+        color: $color-link-alt;
         display: block;
         padding: 24px 72px;
         height: 64px;
@@ -328,14 +332,12 @@
     }
     &:last-of-type {
         background: $color-background-alt;
-		position: absolute;
-		bottom: 24px;
 		width: 100%;
 		display: flex;
 		justify-content: center;
         a {
 			background: $color-button;
-			color:$color-background-alt!important;
+			color:$color-link-alt!important;
 			border-radius: 36px;
 			padding: 20px 24px;
 			height: 56px;

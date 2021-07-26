@@ -30,6 +30,10 @@
 	<meta name="twitter:image" content="" />
 	<!-- /twitter meta -->
 
+	<!-- Include the plugin's CSS and JS: -->
+	<script type="text/javascript" src="js/dist/js/bootstrap-multiselect.js"></script>
+	<link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css" />
+
 	<?php wp_head(); ?>
 	<script>
 		// conditionizr.com
@@ -78,9 +82,8 @@
 			<!-- nav -->
 			<nav class="nav navigation mobile-hide" role="navigation">
 				<?php focalpoint_nav(); ?>
-
 			</nav>
-			<a class="button__pill--large-primary" href="/request-a-demo/">Contact Us</a>
+			<a class="button__pill--large-primary mobile-hide" href="/request-a-demo/">Contact Us</a>
 			<!-- /nav -->
 			<!-- mobile -->
 			<div class="hamburgermenu mobile-show">
@@ -91,6 +94,7 @@
 					</label>
 					<div class="overlay"></div>
 					<?php focalpoint_nav_mobile(); ?>
+					
 				</div>
 			</div>
 			<!-- /mobile -->

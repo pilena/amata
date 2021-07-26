@@ -70,6 +70,12 @@
 
 }
 
+.mobile-left {
+	@include breakpoint(xss){
+		text-align: left!important;
+	}
+}
+
 .mobile-reverse {
 	@include breakpoint(sm) {
 		flex-flow: row-reverse!important;
@@ -151,6 +157,10 @@
 		background-color: $color-accent;
 		margin: 0px auto;
 		border-radius: 80px;
+
+		@include breakpoint(xss){
+			margin: 0;
+		}
 	}
 }
 

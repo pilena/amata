@@ -132,6 +132,9 @@ function focalpoint_header_scripts()
 
         wp_register_script('focalpointscripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('focalpointscripts'); // Enqueue it!
+
+        wp_register_script('dist', get_template_directory_uri() . '/assets/js/dist/js//bootstrap-multiselect.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('dist'); // Enqueue it!
     }
 }
 
@@ -158,6 +161,9 @@ function focalpoint_styles()
 
     wp_register_style('mainwpcss', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('mainwpcss'); // Enqueue it!
+
+    wp_register_script('multiselect', get_template_directory_uri() . '/assets/js/dist/css/bootstrap-multiselect.css', array(), '1.0', 'all'); // Custom scripts
+    wp_enqueue_script('multiselect'); // Enqueue it!
 }
 
 // Register FOCALPOINT Navigation

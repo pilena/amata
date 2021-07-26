@@ -5,10 +5,10 @@
 	<section class="section">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 text-center mar-auto">
+				<div class="col-lg-8 col-xs-12 text-center mobile-left mar-auto">
 					<h2><?php the_field('heading'); ?> <div class="after-center"></div></h2>
 				</div>
-				<div class="col-lg-8 mar-auto">
+				<div class="col-lg-8 col-xs-12 mar-auto">
 					<div class="acc-kontainer">
 						<?php
 						if (have_rows('faq_accordion')) :

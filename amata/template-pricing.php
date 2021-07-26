@@ -21,7 +21,7 @@
 	</section>
 	<!-- section -->
 
-	<section class="wave">
+	<section class="wave wave-offset">
 		<svg width="1280" height="117" viewBox="0 0 1280 117" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 25.0703L71.4667 17.4095C141.867 9.7487 284.8 -5.57291 426.667 2.0879C568.533 9.7487 711.467 40.3919 853.333 48.0527C995.2 55.7135 1138.13 40.3919 1208.53 32.7311L1280 25.0703V117H1208.53C1138.13 117 995.2 117 853.333 117C711.467 117 568.533 117 426.667 117C284.8 117 141.867 117 71.4667 117H0V25.0703Z" fill="white" />
 		</svg>
@@ -62,15 +62,15 @@
 	</section>
 	<!-- /section -->
 
-	<section>
+	<section id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8">
+				<div class="col-lg-8 pricing__contact-heading text-center mar-auto">
 					<h2>Contact Us</h2>
 					<p>You’re one step closer to finding a solution, all you need to do is get in touch.</p>
 				</div>
-				<div class="col-lg-8">
-					<?php echo do_shortcode('[contact-form-7 id="5" title="Contact Us"]');?>
+				<div class="col-lg-8 mar-auto pricing__contact">
+					<?php echo do_shortcode('[contact-form-7 id="5" title="Contact Us"]'); ?>
 				</div>
 			</div>
 		</div>
