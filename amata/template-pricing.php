@@ -31,7 +31,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 text-center mar-auto">
-					<h2> <?php the_field('heading'); ?> <div class="after-center"></div>
+					<h2> <?php the_field('heading'); ?> <div class="after after-center"></div>
 					</h2>
 					<h3 class="text-center"><?php the_field('sub_heading'); ?></h3>
 				</div>

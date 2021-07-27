@@ -38,7 +38,7 @@
 
 .row {
 
-	@include flex(flex, row, wrap, flex-start, top);
+	@include flex(flex, row, wrap, flex-start, center);
 	// margin-left: -$grid-column-gutter/2;
 	// margin-right: -$grid-column-gutter/2;
 

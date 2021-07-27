@@ -1,4 +1,9 @@
 .home {
+
+    &_hero {
+        height: 76vh;
+        @include flex-nowrap(flex, column, center, center);
+    }
     h2 {
         &::before {
             border-radius: 80px;

@@ -18,11 +18,11 @@
 
 .text-shadow {
 	text-shadow: -1.2px 0 $color-neutral, 0 1.2px $color-neutral, 1.2px 0 $color-neutral, 0 -1.2px $color-neutral;
-	color: $color-background!important;
+	color: $color-background !important;
 }
 
 .text-small {
-	font-size:  0.875em!important;
+	font-size: 0.875em !important;
 }
 //Float
 
@@ -45,47 +45,43 @@
 }
 
 .responsive-img {
-    @include responsive-img();
+	@include responsive-img();
 }
 
 //Mobile
 
 .mobile-hide {
+	display: block;
 
-    display: block;
-
-    @include breakpoint(sm) {
-        display: none !important;
-    }
-
+	@include breakpoint(sm) {
+		display: none !important;
+	}
 }
 
 .mobile-show {
+	display: none !important;
 
-    display: none!important;
-
-    @include breakpoint(sm) {
-        display: block!important;
-    }
-
+	@include breakpoint(sm) {
+		display: block !important;
+	}
 }
 
 .mobile-left {
-	@include breakpoint(xss){
-		text-align: left!important;
+	@include breakpoint(xss) {
+		text-align: left !important;
 	}
 }
 
 .mobile-reverse {
 	@include breakpoint(sm) {
-		flex-flow: row-reverse!important;
-    }
+		flex-flow: row-reverse !important;
+	}
 }
 
 .mobile-column-reverse {
 	@include breakpoint(sm) {
-		flex-flow: column-reverse!important;
-    }
+		flex-flow: column-reverse !important;
+	}
 }
 
 //Page
@@ -95,7 +91,7 @@
 	width: 100%;
 }
 
-.full-width { 
+.full-width {
 	width: 100%;
 }
 
@@ -105,29 +101,29 @@
 	padding: 120px 0px;
 }
 .show {
-	opacity: 1!important;
-	visibility: visible!important;
+	opacity: 1 !important;
+	visibility: visible !important;
 	display: flex;
 }
 
 .hide {
 	opacity: 0;
 	visibility: hidden;
-	display: none!important;
+	display: none !important;
 }
 
 .hideUP {
 	transform: translateY(-100px);
-	transition: .3s;
+	transition: 0.3s;
 }
 .showUP {
 	transform: translateY(0);
-	transition: .3s;
+	transition: 0.3s;
 }
 
-.flex-inline { 
-	display:inline-flex;
-	align-items:center;
+.flex-inline {
+	display: inline-flex;
+	align-items: center;
 }
 
 .flex-center {
@@ -142,7 +138,7 @@
 }
 
 .flex-column {
-	display:flex;
+	display: flex;
 	flex-flow: column;
 }
 
@@ -151,31 +147,34 @@
 }
 
 .after {
+	width: 40px;
+	height: 8px;
+	background-color: $color-accent;
+	border-radius: 80px;
 	&-center {
-		width: 40px;
-		height: 8px; 
-		background-color: $color-accent;
 		margin: 0px auto;
-		border-radius: 80px;
-
-		@include breakpoint(xss){
+		@include breakpoint(xss) {
 			margin: 0;
 		}
+	}
+	&-left {
+		margin: 0;
 	}
 }
 
 .wave {
 	position: relative;
+	svg {
+		width: 100%;
+		height: 100%;
+	}
 
 	&-offset {
 		svg {
-			width: 100%;
-			height: 100%;
 			position: relative;
-			bottom: 94px;
+			bottom: -16px;
 		}
 	}
-	
 }
 
 //Position
@@ -183,20 +182,22 @@
 	position: relative;
 }
 
-//Paddings & Margins 
+//Paddings & Margins
 
 .pad {
 	&-mobile {
 		&-none {
-			@include breakpoint (sm) {
-				padding: 0!important;
+			@include breakpoint(sm) {
+				padding: 0 !important;
 			}
 		}
 	}
 	&-t {
-		&-none {padding: 0!important}
 		&-none {
-			padding-top: none!important;
+			padding: 0 !important;
+		}
+		&-none {
+			padding-top: none !important;
 		}
 		&-0 {
 			padding-top: $padding/2;
@@ -221,7 +222,9 @@
 		}
 	}
 	&-b {
-		&-none {padding: 0!important}
+		&-none {
+			padding: 0 !important;
+		}
 		&-0 {
 			padding-bottom: $padding/2;
 		}
@@ -245,7 +248,9 @@
 		}
 	}
 	&-l {
-		&-none {padding: 0!important}
+		&-none {
+			padding: 0 !important;
+		}
 		&-0 {
 			padding-left: $padding/2;
 		}
@@ -269,7 +274,9 @@
 		}
 	}
 	&-r {
-		&-none {padding: 0!important}
+		&-none {
+			padding: 0 !important;
+		}
 		&-0 {
 			padding-right: $padding/2;
 		}
@@ -293,7 +300,9 @@
 		}
 	}
 	&-s {
-		&-none {padding: 0!important}
+		&-none {
+			padding: 0 !important;
+		}
 		&-0 {
 			padding: 0 $padding/2;
 		}
@@ -313,7 +322,7 @@
 			padding: 0 $padding * 5;
 		}
 		&-6 {
-			padding:0 80px;
+			padding: 0 80px;
 		}
 	}
 	&-tb {
@@ -324,10 +333,10 @@
 			padding: $padding 0;
 		}
 		&-2 {
-			padding: $padding * 2 0 ;
+			padding: $padding * 2 0;
 		}
 		&-3 {
-			padding: $padding * 3 0 ;
+			padding: $padding * 3 0;
 		}
 		&-4 {
 			padding: $padding * 4 0;
@@ -359,10 +368,12 @@
 }
 .mar {
 	&-auto {
-		margin: 0 auto!important;
+		margin: 0 auto !important;
 	}
 	&-t {
-		&-none {margin-top: 0!important}
+		&-none {
+			margin-top: 0 !important;
+		}
 		&-0 {
 			margin-top: $margin/2;
 		}
@@ -383,7 +394,9 @@
 		}
 	}
 	&-b {
-		&-none {margin-bottom: 0!important}
+		&-none {
+			margin-bottom: 0 !important;
+		}
 		&-0 {
 			margin-bottom: $margin/2;
 		}
@@ -424,7 +437,9 @@
 		}
 	}
 	&-r {
-		&-none {margin: 0!important}
+		&-none {
+			margin: 0 !important;
+		}
 		&-0 {
 			margin-right: $margin/2;
 		}
@@ -445,7 +460,9 @@
 		}
 	}
 	&-s {
-		&-none {margin: 0!important}
+		&-none {
+			margin: 0 !important;
+		}
 		&-0 {
 			margin: 0 $margin/2;
 		}
@@ -466,7 +483,9 @@
 		}
 	}
 	&-tb {
-		&-none {margin: 0!important}
+		&-none {
+			margin: 0 !important;
+		}
 		&-0 {
 			margin: $margin/2 0;
 		}
@@ -474,10 +493,10 @@
 			margin: $margin 0;
 		}
 		&-2 {
-			margin: $margin * 2 0 ;
+			margin: $margin * 2 0;
 		}
 		&-3 {
-			margin: $margin * 3 0 ;
+			margin: $margin * 3 0;
 		}
 		&-4 {
 			margin: $margin * 4 0;
@@ -487,7 +506,9 @@
 		}
 	}
 	&-a {
-		&-none {margin: 0!important}
+		&-none {
+			margin: 0 !important;
+		}
 		&-0 {
 			margin: $margin/2;
 		}
@@ -511,19 +532,14 @@
 
 .font {
 	&-thin {
-	
 	}
 	&-regular {
-
 	}
 	&-medium {
-
 	}
 	&-bold {
-		
 	}
 }
-
 
 // .line {
 // 	background: $color-neutral-second;
