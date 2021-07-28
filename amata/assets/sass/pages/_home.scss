@@ -16,10 +16,20 @@
     }
     &_services {
         padding: 24px;
+        margin-right: 32px;
+        margin-bottom: 32px;
         background-color: $color-background;
         border-radius: 8px;
         box-shadow: $box-shadow;
         height: fit-content;
+
+        h3 {
+            color: $color-brand-one;
+        }
+
+        @include breakpoint(xs){
+            margin-right: 0;
+        }
     }
 }
 
