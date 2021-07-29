@@ -1,21 +1,17 @@
 .post {
-    border-radius: 16px;
-    padding: 32px;
-    min-height: 420px;
-    margin-bottom: 40px;
-    filter: drop-shadow(0px 7.04161px 15.3294px rgba(67, 67, 67, 0.0752215))
-        drop-shadow(0px 4.92415px 6.3357px rgba(67, 67, 67, 0.0444555))
-        drop-shadow(0px 2.89319px 3.08708px rgba(67, 67, 67, 0.0185339))
-        drop-shadow(0px 1.21701px 1.54994px rgba(67, 67, 67, 0.00421641));
+   
     &__top {
         position: relative;
         min-height: 400px;
+
+        h1 {
+            color: $color-text-alt!important;
+        }
         &-inner {
-            @include flex-nowrap(flex, column, center, center);
-            min-height: fit-content;
-            h3 {
-                color: $color-background;
-            }
+           width: 100%;
+           height: 520px;
+           padding: 32px;
+           border-radius: 16px; 
             .category {
                 border-radius: 4px;
                 background: $color-neutral;
@@ -27,11 +23,6 @@
                 text-align: center;
                 min-height: 24px;
                 width: fit-content;
-            }
-            .date {
-                color: $color-background;
-                font-family: $font-family;
-                font-weight: $font-weight-bold;
             }
             &--center {
                 @include flex(flex, row, wrap, center, center);
@@ -56,6 +47,29 @@
                 padding: 8px;
                 span {
                     color: $color-brand-one-third;
+                }
+            }
+        }
+        article {
+            blockquote {
+                @include flex-nowrap(flex, row, center, center);
+                background-color: #9A9A9C;
+                margin: 0;
+                padding: 32px;
+                border-radius: 8px;
+
+                p {
+                    color: $color-background;
+                    margin: 0;
+                    font-size: 20px;
+                    line-height: 26px;
+                    font-weight: 600;
+                }
+
+                i {
+                    color: $color-accent;
+                    margin-right: 16px;
+                    font-size: 32px;
                 }
             }
         }
@@ -116,11 +130,14 @@
     }
 }
 .posts {
-    @include flex(flex, column, wrap, center, center);
-    padding-top: 224px;
-    @include breakpoint(sm) {
-        padding-top: 144px;
-    }
+    border-radius: 16px;
+    padding: 32px;
+    min-height: 420px;
+    margin-bottom: 40px;
+    filter: drop-shadow(0px 7.04161px 15.3294px rgba(67, 67, 67, 0.0752215))
+        drop-shadow(0px 4.92415px 6.3357px rgba(67, 67, 67, 0.0444555))
+        drop-shadow(0px 2.89319px 3.08708px rgba(67, 67, 67, 0.0185339))
+        drop-shadow(0px 1.21701px 1.54994px rgba(67, 67, 67, 0.00421641));
     &__list {
         &-image {
             height: 320px;
@@ -177,5 +194,33 @@
         &-wrap {
             @include flex(flex, column, wrap, center, center);
         }
+    }
+}
+
+.sidebar {
+    &__related {
+        @include flex(flex, row, wrap, flex-start, space-between);
+
+        &-post {
+            @include flex-nowrap(flex, row, flex-start, center);
+            padding: 0;
+
+            div {
+                p {
+                    a{
+                        color: $color-text;
+                        line-height: 28px;
+                        font-weight: 500;
+                        font-family: 'Neometric Medium';
+                    }
+                }
+            }
+        }
+    }
+}
+
+.prevnext {
+    &__wrap {
+        border-top: 1px solid $color-brand-one;
     }
 }

@@ -35,7 +35,7 @@
 
 						<div class="col-lg-6 col-sm-12 pad-xxsm-b mar-xxsm-t mar-xxsm-b">
 							<!-- article -->
-							<article class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="background-image:linear-gradient(180deg, rgba(154, 154, 156, 0) 36.98%, rgba(32, 35, 50, 0.6) 59.37%, #202332 100%), url('<?php echo get_the_post_thumbnail_url(); ?>');background-size:cover;background-position:center;">
+							<article class="posts" id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="background-image:linear-gradient(180deg, rgba(154, 154, 156, 0) 36.98%, rgba(32, 35, 50, 0.6) 59.37%, #202332 100%), url('<?php echo get_the_post_thumbnail_url(); ?>');background-size:cover;background-position:center;">
 								<?php if (has_post_thumbnail()) : // Check if thumbnail exists 
 								?>
 
